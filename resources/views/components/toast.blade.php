@@ -1,51 +1,51 @@
 <script type="text/javascript">
-    Livewire.on('success', function(data) {
-        if (data.modal !== null) {
-            modalHide(data.modal)
+    Livewire.on('success', function(alert) {
+        if (alert.modal !== null) {
+            modalHide(alert.modal)
         }
         iziToast.success(Object.assign({}, {
-                title: data.options.title !== null &&
-                    data.options.title !== void 0 ? data.options.title : '',
-                message: data.mensaje !== null &&
-                    data.mensaje !== void 0 ? data.mensaje : ''
+                title: alert.options.title !== null &&
+                    alert.options.title !== void 0 ? alert.options.title : '',
+                message: alert.message !== null &&
+                    alert.message !== void 0 ? alert.message : ''
             },
-            data.options));
+            alert.options));
     });
-    Livewire.on('error', function(data) {
-        if (data.modal !== null) {
-            modalHide(data.modal)
+    Livewire.on('error', function(alert) {
+        if (alert.modal !== null) {
+            modalHide(alert.modal)
         }
         iziToast.error(Object.assign({}, {
-                title: data.options.title !== null &&
-                    data.options.title !== void 0 ? data.options.title : '',
-                message: data.mensaje !== null &&
-                    data.mensaje !== void 0 ? data.mensaje : ''
+                title: alert.options.title !== null &&
+                    alert.options.title !== void 0 ? alert.options.title : '',
+                message: alert.message !== null &&
+                    alert.message !== void 0 ? alert.message : ''
             },
-            data.options));
+            alert.options));
     });
-    Livewire.on('info', function(data) {
-        if (data.modal !== null) {
-            modalHide(data.modal)
+    Livewire.on('info', function(alert) {
+        if (alert.modal !== null) {
+            modalHide(alert.modal)
         }
         iziToast.info(Object.assign({}, {
-                title: data.options.title !== null &&
-                    data.options.title !== void 0 ? data.options.title : '',
-                message: data.mensaje !== null &&
-                    data.mensaje !== void 0 ? data.mensaje : ''
+                title: alert.options.title !== null &&
+                    alert.options.title !== void 0 ? alert.options.title : '',
+                message: alert.message !== null &&
+                    alert.message !== void 0 ? alert.message : ''
             },
-            data.options));
+            alert.options));
     });
-    Livewire.on('warning', function(data) {
-        if (data.modal !== null) {
-            modalHide(data.modal)
+    Livewire.on('warning', function(alert) {
+        if (alert.modal !== null) {
+            modalHide(alert.modal)
         }
         iziToast.warning(Object.assign({}, {
-                title: data.options.title !== null &&
-                    data.options.title !== void 0 ? data.options.title : '',
-                message: data.mensaje !== null &&
-                    data.mensaje !== void 0 ? data.mensaje : ''
+                title: alert.options.title !== null &&
+                    alert.options.title !== void 0 ? alert.options.title : '',
+                message: alert.message !== null &&
+                    alert.message !== void 0 ? alert.message : ''
             },
-            data.options));
+            alert.options));
     });
 
     function modalHide(modalId) {

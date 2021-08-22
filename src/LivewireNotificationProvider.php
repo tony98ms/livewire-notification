@@ -30,7 +30,7 @@ class LivewireNotificationProvider extends ServiceProvider
             //Triggers the event to execute the notification.
             $this->emit($type, [
                 'modal' => $options['modal'] ?? null,
-                'mensaje' => $message,
+                'message' => $message,
                 'options' => collect($options)->except([
                     'modal'
                 ])->toArray(),
