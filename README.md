@@ -37,7 +37,7 @@ Add the [iziTOAST](https://izitoast.marcelodolza.com/) CDN styles and script, an
 
     //INSERT COMPONENT
 
-    <x-livewire-alert::scripts />
+       <x-livewire-notification::toast />
 
     //OR
 
