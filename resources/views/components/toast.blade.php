@@ -1,6 +1,8 @@
 <script type="text/javascript">
     document.addEventListener('livewire:init', () => {
-        Livewire.on('success', function(alert) {
+        Livewire.on('success', function({
+            alert
+        }) {
             if (alert.modal !== null) {
                 modalHide(alert.modal)
             }
@@ -12,7 +14,9 @@
                 },
                 alert.options));
         });
-        Livewire.on('error', function(alert) {
+        Livewire.on('error', function({
+            alert
+        }) {
             if (alert.modal !== null) {
                 modalHide(alert.modal)
             }
@@ -24,7 +28,9 @@
                 },
                 alert.options));
         });
-        Livewire.on('info', function(alert) {
+        Livewire.on('info', function({
+            alert
+        }) {
             if (alert.modal !== null) {
                 modalHide(alert.modal)
             }
@@ -36,7 +42,9 @@
                 },
                 alert.options));
         });
-        Livewire.on('warning', function(alert) {
+        Livewire.on('warning', function({
+            alert
+        }) {
             if (alert.modal !== null) {
                 modalHide(alert.modal)
             }
