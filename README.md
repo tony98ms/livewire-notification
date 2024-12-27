@@ -1,6 +1,9 @@
 # Laravel package to launch toast notifications.
 
-[![Latest Stable Version](http://poser.pugx.org/tonystore/livewire-notification/v)](https://packagist.org/packages/tonystore/livewire-notification) [![Total Downloads](http://poser.pugx.org/tonystore/livewire-notification/downloads)](https://packagist.org/packages/tonystore/livewire-notification) [![Latest Unstable Version](http://poser.pugx.org/tonystore/livewire-notification/v/unstable)](https://packagist.org/packages/tonystore/livewire-notification) [![License](http://poser.pugx.org/tonystore/livewire-notification/license)](https://packagist.org/packages/tonystore/livewire-notification)
+[![Latest Stable Version](https://img.shields.io/packagist/v/tonystore/livewire-notification?label=version)](https://packagist.org/packages/tonystore/livewire-notification) 
+[![Packagist Downloads](https://img.shields.io/packagist/dt/tonystore/livewire-notification)](https://packagist.org/packages/tonystore/livewire-notification)
+[![License](https://img.shields.io/packagist/l/tonystore/livewire-notification)](https://packagist.org/packages/tonystore/livewire-notification) 
+[![PHP Version Require](https://img.shields.io/packagist/dependency-v/tonystore/livewire-notification/php)](https://packagist.org/packages/tonystore/livewire-notification)
 
 This package provides assistance when using toast notifications. Using the [iziTOAST](https://izitoast.marcelodolza.com/) package, which allows us to launch elegant and responsive notifications, having the facility to apply a number of configurations that you will find available on their [official site](https://izitoast.marcelodolza.com/) .
 
